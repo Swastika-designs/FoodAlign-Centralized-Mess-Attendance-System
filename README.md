@@ -4,8 +4,7 @@ FoodAlign is a Java-based system designed to optimize meal management in college
 
 ## Features  
 - **Student Dashboard**:  
-  - Mark attendance for each meal.  
-  - View weekly menu and attendance status.  
+  - Mark attendance for each meal. 
 
 - **Admin Dashboard**:  
   - Manage student records and meal attendance.   
