@@ -161,7 +161,7 @@ public class MealCount extends JFrame {
 
     private void fetchMealCounts() {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodalign", "root", "Sup#2002$");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodalign", "root", "password");
             String querySQL = "SELECT breakfast_count, lunch_count, dinner_count FROM meal_counts WHERE id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(querySQL);
             preparedStatement.setInt(1, 1);
@@ -186,7 +186,7 @@ public class MealCount extends JFrame {
 
     private void fetchMenuForDay(String day) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodalign", "root", "Sup#2002$");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodalign", "root", "password");
             String querySQL = "SELECT meal_type, items FROM menu WHERE day = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(querySQL);
             preparedStatement.setString(1, day);
