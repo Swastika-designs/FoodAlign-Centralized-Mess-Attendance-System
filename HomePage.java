@@ -108,7 +108,7 @@ public class HomePage {
     public static void authenticateUser(String email, String password, String role, JFrame frame) {
         String url = "jdbc:mysql://localhost:3306/foodalign";
         String dbUsername = "root";
-        String dbPassword = "Sup#2002$";
+        String dbPassword = "password";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
